@@ -2,12 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <nav>
-      NAV BAR GOES HERE
+    <nav id="primary_nav_wrap">
+      <ul>
+        <li class="current-menu-item"><a href="/index">Home</a></li>
+        <li class="gallery"><a href="/#gallery">Gallery</a></li>
+        <li class="care"><a href="#">Care</a>
+          <ul>
+            <li><a href="/care1">Care 1</a></li>
+            <li><a href="/care2">Care 2</a></li>
+            <li><a href="/care3">Care 3</a></li>
+            <li><a href="/care4">Care 4</a></li>
+            <li><a href="/care5">Care 5</a></li>
+          </ul>
+        </li>
+        <li class="about"><a href="#">About Us</a></li>
+        <li class="contact"><a href="#">Contact Us</a></li>
+      </ul>
     </nav>
     <%= yield %>
   </body>
