@@ -4,22 +4,22 @@ get "/" do
   erb :index
 end
 
-get "/about" do
+get "/care1" do
   erb :care1
 end
 
-get "/about" do
+get "/care2" do
   erb :care2
 end
 
-get "/about" do
+get "/care3" do
   erb :care3
 end
 
-get "/about" do
+get "/care4" do
   erb :care4
 end
 
-get "/about" do
+get "/care5" do
   erb :care5
 end
