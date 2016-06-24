@@ -145,6 +145,13 @@ section.module h2 {
   margin-bottom: 40px;
 }
 
+section.module h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
 /*P GENERAL TEXT FONT*/
 section.module p {
   font-family: 'Lato', sans-serif;
@@ -164,7 +171,7 @@ section.module.content {
   text-align: left;
 }
 
-section.module.content#gallery_content {
+section.module.content #gallery_content {
   text-align: center;
 }
 
@@ -208,9 +215,10 @@ section.module.parallax-5 {
   background-image: url("images/map.png");
 }
 /*for care pages*/
-section.module.parallax-care1" {
+section.module.parallax-care1 {
 	background-image: url(:);
 }
+/*cannot delete below css will cause a blue line in "visit us"*/
 #gallery_content img {
   width: 300px;
   display: inline-block;
@@ -224,8 +232,26 @@ a {
 a.lightbox-link {
   cursor: pointer;
 }
+/*.carelink {
+	clear: both;
+}*/
 
-
+img.carelink {
+	display: inline-block;
+	width: 186px;
+	padding: 0;
+	margin: 0;
+}
+.caresec {
+	display: inline-block;
+	width: 186px;
+	margin: 0 1px;
+	padding: 0;
+}
+.caresec p{
+	text-align: center;
+	
+}
 /*@media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
@@ -268,3 +294,4 @@ a.lightbox-link {
   cursor: pointer;
   display: none
 }
+
