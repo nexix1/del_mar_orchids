@@ -4,6 +4,8 @@ nav {
 	width: 100%;
 	background: rgba(255,255,255,0.9);
 	height: 93px;
+  position: fixed;
+  z-index: 10;
 }
 
 #primary_nav_wrap
@@ -148,33 +150,48 @@ section.module p {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   line-height: 28px;
-  font-size: 20px;
+  font-size: 18px;
+  margin-bottom: 28px;
 }
 
-/*section.module p:last-child {
+section.module p:last-child {
   margin-bottom: 0;
-}*/
-/*section.module.content {
+}
+
+section.module.content {
   padding: 40px 0;
-}*/
+  background-color: white;
+  text-align: left;
+}
+
+section.module.content#gallery_content {
+  text-align: center;
+}
+
+footer.module.content {
+  padding: 40px 0;
+  background-color: darkgrey;
+}
+
 section.module.parallax {
-  height: 800px;
+  height: 100vh;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
 section.module.parallax h1 {
   font-family: 'Rock Salt', cursive;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 40px;
-  line-height: 800px;
-  font-weight: 700;
+  font-size: 70px;
+  line-height: 100vh;
   text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+/*  text-transform: uppercase;*/
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
+
 section.module.parallax-1 {
   background-image: url("images/intro.jpg");
 }
@@ -187,10 +204,28 @@ section.module.parallax-3 {
 section.module.parallax-4 {
   background-image: url("images/about.jpg");
 }
+section.module.parallax-5 {
+  background-image: url("images/map.png");
+}
 /*for care pages*/
 section.module.parallax-care1" {
 	background-image: url(:);
 }
+#gallery_content img {
+  width: 300px;
+  display: inline-block;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.lightbox-link {
+  cursor: pointer;
+}
+
+
 /*@media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
@@ -208,3 +243,28 @@ section.module.parallax-care1" {
   }
 }*/
 
+/* ============================================================
+  LIGHTBOX
+============================================================ */
+
+#lightbox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  height: 85vh;
+}
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  cursor: pointer;
+  display: none
+}
