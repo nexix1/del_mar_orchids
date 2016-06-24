@@ -208,13 +208,33 @@ section.module.parallax-5 {
   background-image: url("images/map.png");
 }
 /*for care pages*/
-section.module.parallax-care1" {
+section.module.parallax-care1 {
 	background-image: url(:);
 }
+
 #gallery_content img {
   width: 300px;
   display: inline-block;
   margin: 5px;
+}
+
+#about_content img {
+  height: 300px;
+}
+
+.about_column {
+  display: inline-block;
+  height: 300px;
+/*  border: solid 1px black;*/
+  overflow: hidden;
+}
+
+.about_column:last-child {
+  width: 640px;
+}
+
+.about_column img {
+  margin-right: 20px;
 }
 
 a {
