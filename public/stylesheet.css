@@ -1,18 +1,49 @@
 nav {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	background: rgba(255,255,255,0.9);
+	height: 93px;
   position: fixed;
   z-index: 10;
 }
 
 #primary_nav_wrap
 {
-	margin-top:15px
+	/*margin-top:15px*/
 }
+#primary_nav_wrap h1
+{
+	position: absolute;
+  top: 66%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  font-family: Rock Salt;
+  font-size: 30px;
+  mix-blend-mode: difference;
+  color: white;
 
+}
+#primary_nav_wrap div
+{
+	position: absolute;
+	top: 65%;
+	left: 90%;
+}
+#primary_nav_wrap div a
+{
+	padding-right: 5px;
+	padding-left: 5px;
+}
 #primary_nav_wrap ul
 {
+	position: absolute;
+	top: 66%;
 	list-style:none;
-	position:relative;
-	float:left;
+	/*position:relative;
+	float:left;*/
 	margin:0;
 	padding:0
 }
@@ -22,7 +53,8 @@ nav {
 	display:block;
 	color:#333;
 	text-decoration:none;
-	font-weight:700;
+	font-family: lato;
+	/*font-weight:700;*/
 	font-size:12px;
 	line-height:32px;
 	padding:0 15px;
@@ -37,14 +69,17 @@ nav {
 	padding:0
 }
 
-#primary_nav_wrap ul li.current-menu-item
+/*#primary_nav_wrap ul li.current-menu-item
 {
 	background:#ddd
+}*/
+#primary_nav_wrap a:hover
+{
+	color: purple
 }
-
 #primary_nav_wrap ul li:hover
 {
-	background:#f6f6f6
+	/*background:#f6f6f6*/
 }
 
 #primary_nav_wrap ul ul
@@ -53,7 +88,7 @@ nav {
 	position:absolute;
 	top:100%;
 	left:0;
-	background:#fff;
+	background: rgba(255,255,255,0.5);
 	padding:0
 }
 
@@ -61,10 +96,12 @@ nav {
 #primary_nav_wrap ul ul li
 {
 	float:none;
-	width:200px
-	background: transparent;
+	width:161px
 }
-
+#primary_nav_wrap ul ul a:hover
+{
+	/*color: yellow;*/
+}
 #primary_nav_wrap ul ul a
 {
 	line-height:120%;
@@ -80,6 +117,10 @@ nav {
 #primary_nav_wrap ul li:hover > ul
 {
 	display:block
+}
+footer {
+	background: grey;
+	color: white;
 }
 
 /* ============================================================
@@ -166,7 +207,10 @@ section.module.parallax-4 {
 section.module.parallax-5 {
   background-image: url("images/map.png");
 }
-
+/*for care pages*/
+section.module.parallax-care1" {
+	background-image: url(:);
+}
 #gallery_content img {
   width: 300px;
   display: inline-block;
@@ -180,6 +224,7 @@ a {
 a.lightbox-link {
   cursor: pointer;
 }
+
 
 /*@media all and (min-width: 600px) {
   section.module h2 {
