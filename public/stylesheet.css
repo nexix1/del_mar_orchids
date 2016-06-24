@@ -3,7 +3,7 @@ nav {
 	z-index: 10;
 	width: 100%;
 	background: rgba(255,255,255,0.9);
-	height: 93px;
+	height: 70px;
   position: fixed;
   z-index: 10;
 }
@@ -15,7 +15,7 @@ nav {
 #primary_nav_wrap h1
 {
 	position: absolute;
-  top: 66%;
+  top: 54%;
   left: 50%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
@@ -29,8 +29,8 @@ nav {
 #primary_nav_wrap div
 {
 	position: absolute;
-	top: 65%;
-	left: 90%;
+	top: 54%;
+	left: 91.5%;
 }
 #primary_nav_wrap div a
 {
@@ -40,7 +40,7 @@ nav {
 #primary_nav_wrap ul
 {
 	position: absolute;
-	top: 66%;
+	top: 54%;
 	list-style:none;
 	/*position:relative;
 	float:left;*/
@@ -57,7 +57,7 @@ nav {
 	/*font-weight:700;*/
 	font-size:12px;
 	line-height:32px;
-	padding:0 15px;
+	padding-left: 15px;
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
@@ -349,5 +349,71 @@ a img:hover {
   z-index: 20;
   cursor: pointer;
   display: none
+}
+.addy {
+	width: 400px;
+	height: 300px;
+	/*border: 1px solid yellow;*/
+	display: inline-block;
+	vertical-align: top;
+}
+.addy p{
+	text-align: left;
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+form {
+	display: inline-block;
+	width: 500px;
+	/*border: 1px solid black;*/
+	text-align: center;
+}
+::-webkit-input-placeholder {
+ font-size: 18px;
+ text-transform: uppercase;
+ text-transform: uppercase;
+ /*text-align: center;*/
+ font-weight: 300;
+ font-family: lato, sans-serif;
+}
+:-moz-placeholder { /* older Firefox*/
+ font-size: 18px;
+ text-transform: uppercase;
+ text-transform: uppercase;
+ /*text-align: center;*/
+ font-weight: 300;
+ font-family: lato, sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+ font-size: 18px;
+ text-transform: uppercase;
+ text-transform: uppercase;
+ /*text-align: center;*/
+ font-weight: 300;
+ font-family: lato, sans-serif;
+} 
+:-ms-input-placeholder { 
+ font-size: 18px;
+ text-transform: uppercase;
+ text-transform: uppercase;
+ /*text-align: center;*/
+ font-weight: 300;
+ font-family: lato, sans-serif;
+}
+#frombox, #tobox, #subbox {
+	width: 490px;
+	height: 20px;
+}
+#bodybox {
+	width: 490px;
+	height: 200px;
+}
+.button {
+	background-color: white;
+	font-family: lato, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
 }
 
