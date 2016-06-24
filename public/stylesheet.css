@@ -133,9 +133,6 @@ footer {
 /* ============================================================
   SECTIONS
 ============================================================ */
-/*section.module:last-child {
-  margin-bottom: 0;
-}*/
 
 /*H2 SUBHEADER FONT*/
 section.module h2 {
@@ -145,6 +142,7 @@ section.module h2 {
   margin-bottom: 40px;
 }
 
+/*H3 SUBHEADER FONT*/
 section.module h3 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
@@ -188,17 +186,37 @@ section.module.parallax {
   background-size: cover;
 }
 
+section.module.parallax.care {
+  height: 80vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.module.parallax .title {
+  position: relative;
+  top: 50vh;
+  -ms-transform: translate(0,-50%);
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+}
+
+section.module.parallax.care .title {
+  top: 45vh;
+}
+
 section.module.parallax h1 {
   font-family: 'Rock Salt', cursive;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
   font-size: 70px;
-  line-height: 100vh;
+  line-height: 100px;
   text-align: center;
-/*  text-transform: uppercase;*/
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
+/* INDEX BG IMAGES */
 section.module.parallax-1 {
   background-image: url("images/intro.jpg");
 }
@@ -214,15 +232,44 @@ section.module.parallax-4 {
 section.module.parallax-5 {
   background-image: url("images/map.png");
 }
-/*for care pages*/
-section.module.parallax-care1 {
-	background-image: url(:);
+
+/* CARE BG IMAGES */
+section#phals {
+	background-image: url("images/care1.jpg");
+}
+section#cattleya {
+  background-image: url("images/care2.jpg");
+}
+section#dendro {
+  background-image: url("images/care3.jpg");
+}
+section#odonts {
+  background-image: url("images/care4.jpg");
+}
+section#paphs {
+  background-image: url("images/care5.jpg");
+}
+
+#gallery_content {
+  text-align: center;
 }
 
 #gallery_content img {
   width: 300px;
   display: inline-block;
   margin: 5px;
+}
+
+#care_content {
+  text-align: center;
+}
+
+#care_content img {
+  width: 300px;
+}
+.carebox {
+  display: inline-block;
+  margin: 10px 5px;
 }
 
 #about_content img {
@@ -246,31 +293,21 @@ section.module.parallax-care1 {
 
 a {
   text-decoration: none;
+  color: black;
 }
-
+a:hover {
+  color: purple;
+}
 a.lightbox-link {
   cursor: pointer;
 }
-/*.carelink {
-	clear: both;
-}*/
+a img {
+  transition: all .2s ease-in-out;
+}
+a img:hover {
+  transform: scale(1.025);
+}
 
-img.carelink {
-	display: inline-block;
-	width: 186px;
-	padding: 0;
-	margin: 0;
-}
-.caresec {
-	display: inline-block;
-	width: 186px;
-	margin: 0 1px;
-	padding: 0;
-}
-.caresec p{
-	text-align: center;
-	
-}
 /*@media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
