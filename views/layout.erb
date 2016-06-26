@@ -8,47 +8,81 @@
     <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <nav id="primary_nav_wrap">
-      <h1>Del Mar Orchids</h1>
-      <ul class="navbar">
-        <li class="current-menu-item"><a href="/">HOME</a></li>
-        <li class="gallery"><a href="/#gallery">GALLERY</a></li>
-        <li class="care"><a href="/#care">ORCHID CARE</a>
+    <nav id="nav">
+      <a href="/">
+        <h1>Del Mar Orchids</h1>
+      </a>
+      <ul class="menu">
+        <li>
+          <a href="/#home">HOME</a>
+        </li>
+        <li>
+          <a href="/#gallery">GALLERY</a>
+        </li>
+        <li>
+          <a href="/#care">ORCHID CARE</a>
           <ul>
-            <li><a href="/care1">PHALAENOPSIS CULTURE</a></li>
-            <li><a href="/care2">CATTLEYA CULTURE</a></li>
-            <li><a href="/care3">DENDROBIUM CULTURE</a></li>
-            <li><a href="/care4">ONCIDIUM CULTURE</a></li>
-            <li><a href="/care5">PAPHIOPEDILUM CULTURE</a></li>
+              <li>
+                <a href="/care1">PHALAENOPSIS CULTURE</a>
+              </li>
+              <li>
+                <a href="/care2">CATTLEYA CULTURE</a>
+              </li>
+              <li>
+                <a href="/care3">DENDROBIUM CULTURE</a>
+              </li>
+              <li>
+                <a href="/care4">ONCIDIUM CULTURE</a>
+              </li>
+              <li>
+                <a href="/care5">PAPHIOPEDILUM CULTURE</a>
+              </li>
           </ul>
         </li>
-        <li class="about"><a href="/#about">ABOUT US</a></li>
-        <li class="contact"><a href="#contact">CONTACT US</a></li>
+        <li class="about">
+          <a href="/#about">ABOUT US</a>
+        </li>
+        <li class="contact">
+          <a href="/#visit">VISIT US</a>
+        </li>
+        <li class="contact">
+          <a href="#contact">CONTACT</a>
+        </li>
       </ul>
       <div class="social">
-        <a href="https://www.facebook.com/delmarorchids/" target="_blank"><img src="../images/fb-512.png" width="20px" height="20px"></a>
-        <a href="https://twitter.com/delmarorchids" target="_blank"><img src="../images/t-512.png" width="20px" height="20px"></a>
-        <a href="www.instagram.com" target="_blank"><img src="../images/ig-512.png" width="20px" height="20px"></a>
+        <a class="facebook" href="https://www.facebook.com/delmarorchids/" target="_blank"></a>
+        <a class="twitter" href="https://twitter.com/delmarorchids" target="_blank"></a>
+        <a class="instagram" href="https://www.instagram.com" target="_blank"></a>
       </div>
     </nav>
+
     <%= yield %>
-    <section id="contact">
-      <footer class="module content">
-        <div class="container">
-          <div class="addy">
-            <p>4343 Carmel Valley Road, San Diego, CA 92130</p>
-            <p>Phone: (858) 794-0774</p>
-            <p>Email: delmarorchids@gmail.com</p>
-          </div>
+
+    <footer id="contact" class="module content">
+      <div class="container">
+        <div class="location">
+          <h2>LOCATION</h2>
+          <p>4343 Carmel Valley Road, San Diego, CA 92130</p>
+        </div>
+        <div class="hours">
+          <h2>HOURS</h2>
+          <p>TUE - SAT: 12:00 NOON - 6:00 PM</p>
+          <p>SUN & MON: By appointment</p>
+          <p>Hours can be irregular, for best results please call</p>
+        </div>
+        <div class="questions">
+          <h2>HAVE A QUESTION?</h2>
+          <p>Phone: (858) 794-0774</p>
+          <p>Email: delmarorchids@gmail.com</p>
           <form method="post" action="/email_response"> 
             <input type="text" id="frombox" name="from" placeholder="from">
             <!-- <input type="post" id="tobox" name="to" placeholder="to"> -->
             <input type="post" id="subbox" name="subject" placeholder="subject">
-            <textarea type="post" id="bodybox" name="body" placeholder="body"></textarea>
+            <textarea type="post" id="bodybox" name="body" placeholder="your message"></textarea>
             <input type="submit" class="button">
           </form>
         </div>
-      </footer>
-    </section>
+      </div>
+    </footer>
   </body>
 </html>
