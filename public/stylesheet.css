@@ -301,10 +301,10 @@ a:hover {
 a.lightbox-link {
   cursor: pointer;
 }
-a img {
+section a img {
   transition: all .2s ease-in-out;
 }
-a img:hover {
+section a img:hover {
   transform: scale(1.025);
 }
 
