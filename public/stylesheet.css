@@ -7,7 +7,6 @@ nav {
 	width: 100%;
 	background: rgba(255,255,255,0.9);
 	height: 70px;
-  position: fixed;
 }
 
 nav h1 {
@@ -425,7 +424,7 @@ a {
 }*/
 
 /* ============================================================
-  LIGHTBOX
+  LIGHTBOX & EMAIL MODAL
 ============================================================ */
 
 #lightbox img {
@@ -438,7 +437,7 @@ a {
   height: 85vh;
 }
 
-#lightbox {
+#lightbox, #modal {
   position: fixed;
   top: 0;
   left: 0;
