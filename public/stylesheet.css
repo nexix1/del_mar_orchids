@@ -1,3 +1,98 @@
+/* 
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+
+ Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  /*border: solid 1px;*/
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+
 /* ============================================================
   NAV
 ============================================================ */
@@ -5,27 +100,23 @@ nav {
 	position: fixed;
 	z-index: 10;
 	width: 100%;
-	background: rgba(255,255,255,0.9);
-	height: 70px;
-  position: fixed;
+	background: rgba(255,255,255,1);
+	height: 50px;
 }
 
 nav h1 {
-	position: absolute;
-  top: 55%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  font-family: 'Rock Salt';
-  font-size: 30px;
   color: black;
+  font-family: 'Rock Salt';
+  font-size: 24px;
+  line-height: 50px;
 }
 
-nav ul {
+ul.topnav {
 	position: absolute;
-	top: 30px;
-  left: 10px;
+	top: 0;
+  right: 0;
+  list-style-type: none;
+  background-color: rgba(255,255,255,1);
 }
 
 nav ul li {
@@ -39,8 +130,8 @@ nav ul a {
 	text-decoration: none;
 	font-family: 'Lato';
 	font-weight: 300;
-	font-size: 14px;
-	line-height: 40px;
+	font-size: 16px;
+	line-height: 50px;
 	padding-left: 15px;
 }
 
@@ -48,13 +139,50 @@ nav a:hover {
 	color: purple;
 }
 
+/*COLLAPSIBLE MENU*/
+nav li.icon {
+  display: none;
+}
+
+@media screen and (max-width:1024px) {
+  ul.topnav li {display: none;}
+  nav ul.topnav {
+    top: 0;
+  }
+  nav ul a {
+    font-size: 32px;    
+  }
+  nav li.icon {
+    float: left;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:1024px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
 /*ORCHID CARE DROP DOWN MENU*/
 nav ul ul {
 	display: none;
 	position: absolute;
-	top: 40px;
+	top: 30px;
 	left: 0;
-	background: rgba(255,255,255,0.7);
+	background: rgba(255,255,255,1);
 	padding: 0;
 }
 
@@ -72,10 +200,10 @@ nav ul li:hover > ul {
 }
 
 /*SOCIAL*/
-.social {
+/*.social {
   position: absolute;
-  top: 40px;
-  right: 10px;
+  top: 30px;
+  right: 5%;
 }
 
 .social a {
@@ -108,7 +236,7 @@ nav ul li:hover > ul {
 
 .instagram:hover {
    background-image: url('images/IG-512-purple.png');
-}
+}*/
 
 /* ============================================================
   FOOTER
@@ -202,14 +330,6 @@ input, textarea {
   background-color: white;
 }
 
-/* ============================================================
-  PRIMARY STRUCTURE
-============================================================ */
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  position: relative;
-}
 /* ============================================================
   SECTIONS
 ============================================================ */
@@ -425,7 +545,7 @@ a {
 }*/
 
 /* ============================================================
-  LIGHTBOX
+  LIGHTBOX & EMAIL MODAL
 ============================================================ */
 
 #lightbox img {
@@ -438,7 +558,7 @@ a {
   height: 85vh;
 }
 
-#lightbox {
+#lightbox, #modal {
   position: fixed;
   top: 0;
   left: 0;
