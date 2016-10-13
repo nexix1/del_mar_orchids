@@ -9,51 +9,57 @@
   </head>
   <body>
     <nav id="nav">
-      <a href="/">
-        <h1>Del Mar Orchids</h1>
-      </a>
-      <ul class="menu">
-        <li>
-          <a href="/#home">HOME</a>
-        </li>
-        <li>
-          <a href="/#gallery">GALLERY</a>
-        </li>
-        <li>
-          <a href="/#care">ORCHID CARE</a>
-          <ul>
-              <li>
-                <a href="/care1">PHALAENOPSIS CULTURE</a>
-              </li>
-              <li>
-                <a href="/care2">CATTLEYA CULTURE</a>
-              </li>
-              <li>
-                <a href="/care3">DENDROBIUM CULTURE</a>
-              </li>
-              <li>
-                <a href="/care4">ONCIDIUM CULTURE</a>
-              </li>
-              <li>
-                <a href="/care5">PAPHIOPEDILUM CULTURE</a>
-              </li>
-          </ul>
-        </li>
-        <li class="about">
-          <a href="/#about">ABOUT US</a>
-        </li>
-        <li class="contact">
-          <a href="/#visit">VISIT US</a>
-        </li>
-        <li class="contact">
-          <a href="#contact">CONTACT</a>
-        </li>
-      </ul>
-      <div class="social">
+      <div class="container">
+        <a href="/">
+          <h1>Del Mar Orchids</h1>
+        </a>
+        <ul class="topnav" id="myTopnav">
+          <li>
+            <a href="/#home">HOME</a>
+          </li>
+          <li>
+            <a href="/#gallery">GALLERY</a>
+          </li>
+          <li>
+            <a href="/#care">ORCHID CARE</a>
+            <ul>
+                <li>
+                  <a href="/care1">PHALAENOPSIS CULTURE</a>
+                </li>
+                <li>
+                  <a href="/care2">CATTLEYA CULTURE</a>
+                </li>
+                <li>
+                  <a href="/care3">DENDROBIUM CULTURE</a>
+                </li>
+                <li>
+                  <a href="/care4">ONCIDIUM CULTURE</a>
+                </li>
+                <li>
+                  <a href="/care5">PAPHIOPEDILUM CULTURE</a>
+                </li>
+            </ul>
+          </li>
+          <li class="about">
+            <a href="/#about">ABOUT US</a>
+          </li>
+          <li class="contact">
+            <a href="/#visit">VISIT US</a>
+          </li>
+          <li class="contact">
+            <a href="#contact">CONTACT</a>
+          </li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="navCollapse()">&#9776;</a>
+          </li>
+        </ul>
+      </div>
+
+<!--       <div class="social">
         <a class="facebook" href="https://www.facebook.com/delmarorchids/" target="_blank"></a>
         <a class="twitter" href="https://twitter.com/delmarorchids" target="_blank"></a>
         <a class="instagram" href="https://www.instagram.com" target="_blank"></a>
-      </div>
+      </div> -->
     </nav>
 
     <%= yield %>
@@ -86,5 +92,6 @@
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/topnav.js"></script>
   </body>
 </html>

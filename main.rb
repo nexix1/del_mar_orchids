@@ -2,7 +2,6 @@ require "sinatra"
 require "sendgrid-ruby"
 include SendGrid
 
-
 get "/" do
   erb :index
 end
@@ -26,6 +25,8 @@ end
 get "/care5" do
   erb :care5
 end
+
+configure(:development){set :database, "sqlite3:blog.sqlite3"}
 
 post "/email_response" do
   from = Email.new(email: params[:from])
