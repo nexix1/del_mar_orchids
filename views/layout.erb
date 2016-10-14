@@ -11,44 +11,25 @@
     <nav id="nav">
       <div class="container">
         <a href="/">
-          <h1>Del Mar Orchids</h1>
+          <h1>Del Mar Orchid World</h1>
         </a>
+
         <ul class="topnav" id="myTopnav">
+          <li><a href="/#home">HOME</a></li>
+          <li><a href="/#gallery_content">GALLERY</a></li>
           <li>
-            <a href="/#home">HOME</a>
-          </li>
-          <li>
-            <a href="/#gallery">GALLERY</a>
-          </li>
-          <li>
-            <a href="/#care">ORCHID CARE</a>
+            <a href="/#care_content">ORCHID CARE</a>
             <ul>
-                <li>
-                  <a href="/care1">PHALAENOPSIS CULTURE</a>
-                </li>
-                <li>
-                  <a href="/care2">CATTLEYA CULTURE</a>
-                </li>
-                <li>
-                  <a href="/care3">DENDROBIUM CULTURE</a>
-                </li>
-                <li>
-                  <a href="/care4">ONCIDIUM CULTURE</a>
-                </li>
-                <li>
-                  <a href="/care5">PAPHIOPEDILUM CULTURE</a>
-                </li>
+              <li><a href="/care1">PHALAENOPSIS GUIDE</a></li>
+              <li><a href="/care2">CATTLEYA GUIDE</a></li>
+              <li><a href="/care3">DENDROBIUM GUIDE</a></li>
+              <li><a href="/care4">ONCIDIUM GUIDE</a></li>
+              <li><a href="/care5">PAPHIOPEDILUM GUIDE</a></li>
             </ul>
           </li>
-          <li class="about">
-            <a href="/#about">ABOUT US</a>
-          </li>
-          <li class="contact">
-            <a href="/#visit">VISIT US</a>
-          </li>
-          <li class="contact">
-            <a href="#contact">CONTACT</a>
-          </li>
+          <li class="about"><a href="/#about_content">ABOUT US</a></li>
+          <li><a href="/#visit">VISIT US</a></li>
+          <li><a href="#contact">CONTACT</a></li>
           <li class="icon">
             <a href="javascript:void(0);" onclick="navCollapse()">&#9776;</a>
           </li>
@@ -66,26 +47,27 @@
 
     <footer id="contact" class="module content">
       <div class="container">
-        <div class="location">
-          <h2>LOCATION</h2>
-          <p>4343 Carmel Valley Road, San Diego, CA 92130</p>
-        </div>
-        <div class="hours">
-          <h2>HOURS</h2>
-          <p>TUE - SAT: 12:00 NOON - 6:00 PM</p>
-          <p>SUN & MON: By appointment</p>
-          <p>Hours can be irregular, for best results please call</p>
-        </div>
-        <div class="questions">
-          <h2>HAVE A QUESTION?</h2>
-          <p>Phone: (858) 794-0774</p>
-          <p>Email: delmarorchids@gmail.com</p>
-          <form method="post" action="/email_response"> 
-            <input type="text" id="frombox" name="from" placeholder="from">
-            <input type="text" id="subbox" name="subject" placeholder="subject">
-            <textarea type="text" id="bodybox" name="body" placeholder="your message"></textarea>
-            <input type="submit" class="button">
-          </form>
+        <div class="row">
+          <div class="six columns">
+            <h2>LOCATION</h2>
+            <p>4343 Carmel Valley Road, San Diego, CA 92130</p>
+
+            <h2>HOURS</h2>
+            <p>TUE - SAT: 12:00 NOON - 6:00 PM</p>
+            <p>SUN & MON: By appointment</p>
+            <p>Hours can be irregular, for best results please call</p>
+          </div>
+          <div class="six columns">
+            <h2>HAVE A QUESTION?</h2>
+            <p>Phone: (858) 794-0774</p>
+            <p>Email: delmarorchids@gmail.com</p>
+            <form method="post" action="/email_response"> 
+              <input type="email" id="frombox" name="from" placeholder="from" required>
+              <input type="text" id="subbox" name="subject" placeholder="subject" required>
+              <textarea type="text" id="bodybox" name="body" placeholder="your message" required></textarea>
+              <input type="submit" class="button">
+            </form>            
+          </div>
         </div>
       </div>
     </footer>
