@@ -154,13 +154,13 @@ div.icon {
   ul.topnav li {
     display: none;
   }
-  div.icon a {
-    font-size: 32px;  
-    color: black;  
-  }
   div.icon {
     float: left;
     display: inline-block;
+  }
+  div.icon a {
+    font-size: 32px;  
+    color: black;  
   }
 }
 
